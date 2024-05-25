@@ -1,0 +1,29 @@
+@media (max-width: 481px){
+    /* header */
+    header{
+        padding-inline: 25px;
+    }
+    .logotext{
+        margin-inline: calc(133 / 481 * 100%);
+    }
+    /* section1  */
+    .section1p{
+        font-size: 32px;
+    }
+}
+@media (max-width : 381px){
+    /* section1  */
+    .section1p{
+        font-size: 24px;
+    }
+}
+
+@media(max-width: 321px){
+/* header  */
+header{
+    padding-inline: 8px;
+}
+.logotext{
+    margin-inline: calc(132 / 321 * 100%);
+}
+}

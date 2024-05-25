@@ -1,0 +1,8 @@
+@media (max-width: 745px){
+    /* header */
+    header{
+        padding-inline: 24px;   }
+    .logotext{
+        margin-inline: calc(261 / 745 * 100%);
+    }
+}
