@@ -61,16 +61,20 @@ column-gap: 8px;
 display: none;
 }
 .mapandcontactdiv{
-  flex-direction: row;
+  flex-direction: column;
   column-gap: 72px;
 justify-content: center;
 align-items: center;
 }
 .contactcontaner{
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   row-gap: 40px
   ;
+}
+.lastpagecontact{
+  flex-direction: row;
+  /* column-gap: 72px; */
 }
 }

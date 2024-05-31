@@ -56,14 +56,12 @@
 header{
     padding-inline: 8px;
 }
-
-}
-@media (max-width:321px){
-    .section2 {
-padding: 48px 0 48px 8px;
-.section2title {
-    font-size: 24px;
-    line-height: 32px;
-}
+.section1h2{font-size: 24px;}
+.section2 {
+    padding: 48px 0 48px 8px;
+    .section2title {
+        font-size: 24px;
+        line-height: 32px;
     }
+        }
 }

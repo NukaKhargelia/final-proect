@@ -16,6 +16,12 @@
   footer {
     padding-inline: 24px;
   }
+  .contactcontaner{
+    flex-direction: row;
+  }
+  .lastpagecontact{
+    flex-direction: column;
+  }
 }
 @media (max-width: 681px) {
   .page2H {
