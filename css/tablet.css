@@ -1,8 +1,60 @@
-@media (max-width: 745px){
-    /* header */
-    header{
-        padding-inline: 24px;   }
-    .logotext{
-        margin-inline: calc(261 / 745 * 100%);
-    }
+@media (max-width: 745px) {
+  /* header */
+  header {
+    padding-inline: 24px;
+  }
+  /* section  */
+  .section2 {
+    padding-inline: 24px 0;
+  }
+  .page2section {
+    padding-inline: 24px;
+  }
+  .page3section{
+    padding-inline: 24px;}
+  /* footer  */
+  footer {
+    padding-inline: 24px;
+  }
+}
+@media (max-width: 681px) {
+  .page2H {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .sortbutton {
+    padding: 8px 16px;
+  }
+  .sortbutton span {
+    display: none;
+  }
+  .page2figures {
+    grid-template-columns: 1fr;
+  }
+  .none480{
+    display: none;
+  }
+  .pagesdiv {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* footer  */
+  footer {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 32px;
+    text-align: center;
+  }
+  .footerlastdiv {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+  }
+  .contacttext {
+    display: none;
+  }
 }

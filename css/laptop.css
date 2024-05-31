@@ -3,22 +3,32 @@
   header {
     padding: 26px 32px;
   }
-  .logotext{
-    margin-inline: 159px;
-  }
   /* section2  */
- .section2cards{
+  .section2cards{
     margin-block: calc(120 / 1025 * 100%);
     margin-left: calc(32 / 1025 * 100%);
  }
-}
-
-@media (max-width: 891px) {
-  /* header  */
-  .none {
-    display: block;
+ .page2section{
+  padding-inline: 32px;
+ }
+ .page2figures{
+  grid-template-columns: 1fr 1fr ;
+ }
+ .none1025 {
+  display: none;
+ }
+ .page3section{
+  padding-inline: 32px;
+ }
+ /* footer  */
+ footer{
+  padding-inline: 32px
+ }
   }
-  h6{
+
+
+@media (max-width: 900px) {
+  .none {
     display: block;
   }
 
@@ -35,10 +45,32 @@
     flex-direction: column;
     row-gap: 26px;
   }
-  .headerspan{
-    display: block;
+  .logotext {
+flex-direction: column;
   }
-  .logotext{
-    margin-inline: calc(262 / 891 * 100%);
-  }
+h6 {
+  display: none;
+}
+.arrow {
+  display: block;
+}
+.headernavlastdiv {
+column-gap: 8px;
+}
+.noneh2{
+display: none;
+}
+.mapandcontactdiv{
+  flex-direction: row;
+  column-gap: 72px;
+justify-content: center;
+align-items: center;
+}
+.contactcontaner{
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  row-gap: 40px
+  ;
+}
 }

@@ -19,8 +19,8 @@
     <div class="container">
       <!-- header  -->
       <header>
-        <i class="fa-solid fa-bars none"></i>
-        <i class="fa-solid fa-xmark none_"></i>
+        <i class="fa-solid fa-bars none forhover"></i>
+        <i class="fa-solid fa-xmark none_ forhover"></i>
         <nav class="headerNav">
           <ul class="header_ul">
             <li><a href="index.html" class="inactive">Home</a></li>
@@ -32,38 +32,48 @@
           >Earthly<span class="headerspan">Artisry</span></a
         >
         <div class="headerslastdiv">
-            <i class="fa-solid fa-arrow-left arrow"></i>
+            <i class="fa-solid fa-arrow-left arrow forhover"></i>
           <h6>Sign In</h6>
-          <i class="fa-solid fa-cart-shopping"></i>
+          <i class="fa-solid fa-cart-shopping forhover"></i>
         </div>
       </header>
       <!-- section  -->
       <section class="page3section">
        <form name="page3getintouchform">
-        <div class="formdiv">
           <h2 class="getintouch"> Get in Touch</h2>
           <div class="inputdiv">
-            <input type="text" name="fullname" placeholder="Full Name" >
-         <input type="email" name="email" placeholder="Email" >
+              <div class="twoinput">
+                <input type="text" name="fullname" placeholder="Full Name" >
+                <input type="email" name="email" placeholder="Email" > 
+              </div>
+           
+           <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+           <button class="page3submitbutton">SUBMIT</button>
           </div>
-        
-        <textarea name="message" id="message" cols="30" rows="10" placeholder="message"></textarea>
-        <button class="page3submitbutton">SUBMIT</button>
-        </div>
        </form>
 
       </section>
       <!-- page3section2 -->
       <section class="page2sec2">
-<div>
-  <h2 class="contacttext">Contact</h2>
+        <h2 class="contacttext2">Contact</h2>
+<div class="contactcontaner">
   <div class="mapandcontactdiv">
     <div class="lastpagecontact">
-      <a href="tel:+123 45 67 89"><i class="fa-solid fa-phone" style="color: #f8f9fc;"></i><p>Call Us</p></a>
+      <div class="callusdiv page3infodiv">
+        <a href="tel:+123 45 67 89"><i class="fa-solid fa-phone lasticons forhover" style="color: #f8f9fc;"></i></a> 
+        <a href="tel:+123 45 67 89"> <h2 class="lastpagecontact noneh2">Call Us</h2></a>
+      </div>
+     <div class="emailusdiv page3infodiv">
       <a href="mailto:example@mail.com">
-        <i class="fa-regular fa-envelope" style="color: #f7f7f8;"></i><p>Email Us</p>
+        <i class="fa-regular fa-envelope lasticons forhover" style="color: #f7f7f8;"></i>
       </a>
-     <a href="https://maps.app.goo.gl/kwBhBo93vwNuKgQk9"><i class="fa-solid fa-location-dot" style="color: #f5f7fa;"></i><p>Address</p></a>
+      <a href="fa-regular fa-envelope"><h2 class="lastpagecontact noneh2"> Email Us</h2></a>
+     </div>
+     <div class="adressdiv page3infodiv">
+      <a href="https://maps.app.goo.gl/kwBhBo93vwNuKgQk9"><i class="fa-solid fa-location-dot lasticons forhover" style="color: #f5f7fa;"></i></a>
+      <a href="https://maps.app.goo.gl/kwBhBo93vwNuKgQk9"><h2 class="lastpagecontact noneh2">Address</h2></a>
+     </div>
+     
     </div>
     <div>
       
@@ -81,14 +91,14 @@
         <li><a href="" class="footernav1text">Privacy Settings</a></li>
       </ul>
       <div class="footericons">
-        <a href="https://www.youtube.com/"
+        <a href="https://www.youtube.com/" class="forhover"
           ><img src="images/logos_youtube.svg" alt=""
         /></a>
-        <a href="https://www.instagram.com/"
+        <a href="https://www.instagram.com/" class="forhover"
           ><img src="images/skill-icons_instagram.svg" alt=""></i
         ></a>
         <a href="https://www.facebook.com/"
-         class="icons" ><i class="fa-brands fa-facebook" style="color: #74c0fc"></i
+         class="icons" ><i class="fa-brands fa-facebook forhover" style="color: #74c0fc"></i
         ></a>
       </div>
     </nav>
@@ -96,21 +106,21 @@
       >Earthly<span class="headerspan">Artisry</span></a
     >
     <div class="footerlastdiv">
-      <div>
-        <div class="footerteldiv">
-          <i class="fa-solid fa-phone" style="color: #f8f9fc"></i>
-          <a href="tel:+123 45 67 89" class="contacttext" >+123 45 67 89</a>
-        </div>
-        <div class="footermaildiv">
-          <i class="fa-regular fa-envelope" style="color: #fcfcfd;"></i>
-          <a href="mailto:example@mail.com" class="contacttext" >example@mail.com</a>
-        </div>
-        <div class="footermapdiv">
-          <i class="fa-solid fa-location-dot" style="color: #f4f7fa;"></i>
-          <a href="https://maps.app.goo.gl/kwBhBo93vwNuKgQk9"
-            class="contacttext"  >Rustaveli avenue, 30</a
-          >
-        </div>
+      <div class="footerteldiv">
+        <a href="tel:+123 45 67 89"><i class="fa-solid fa-phone forhover" style="color: #f8f9fc"></i></a>
+        
+        <a href="tel:+123 45 67 89" class="contacttext" >+123 45 67 89</a>
+      </div>
+      <div class="footermaildiv">
+        <a href="mailto:example@mail.com"><i class="fa-regular fa-envelope forhover" style="color: #fcfcfd;"></i></a>
+        
+        <a href="mailto:example@mail.com" class="contacttext" >example@mail.com</a>
+      </div>
+      <div class="footermapdiv">
+        <a href="https://maps.app.goo.gl/kwBhBo93vwNuKgQk9"><i class="fa-solid fa-location-dot forhover" style="color: #f4f7fa;"></i></a>
+        <a href="https://maps.app.goo.gl/kwBhBo93vwNuKgQk9"
+          class="contacttext"  >Rustaveli avenue, 30</a
+        >
       </div>
     </div>
   </footer>

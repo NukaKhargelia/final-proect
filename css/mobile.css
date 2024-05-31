@@ -1,14 +1,47 @@
 @media (max-width: 481px){
     /* header */
     header{
-        padding-inline: 25px;
+        padding-inline: 20px;
     }
-    .logotext{
-        margin-inline: calc(133 / 481 * 100%);
+     /* section1  */
+     .page1section{
+        height: 304 px;
     }
-    /* section1  */
     .section1p{
         font-size: 32px;
+    }
+    /* section2 */
+    .section2 {
+        padding: 64px 0 64px 20px;
+    }
+    .section2title {
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 32px;
+    }
+    .page3section{
+        height: 560px;
+    }
+    .inputdiv{
+        column-gap: 32px;
+    }
+    }
+   
+@media(max-width: 401px){
+    form {
+        padding: 16px 20px;
+    }
+    .getintouch{
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+    }
+    .inputdiv{
+        flex-direction: column;
+        row-gap: 24px;
+    }
+    .page3submitbutton {
+        width: 100%;
     }
 }
 @media (max-width : 381px){
@@ -23,7 +56,14 @@
 header{
     padding-inline: 8px;
 }
-.logotext{
-    margin-inline: calc(132 / 321 * 100%);
+
 }
+@media (max-width:321px){
+    .section2 {
+padding: 48px 0 48px 8px;
+.section2title {
+    font-size: 24px;
+    line-height: 32px;
+}
+    }
 }

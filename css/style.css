@@ -19,6 +19,7 @@ header {
   background-color: #402101;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .arrow,
 .none,
@@ -45,26 +46,44 @@ header {
 .active {
   color: #d5906e;
 }
+a.active:hover{
+  border: 2px solid #FFFFFF;
+  border-radius: 25px;
+}
+a.inactive:hover{
+  border: 2px solid #FFFFFF;
+  border-radius: 25px;
+}
 .logotext {
   font-family: "Inter", sans-serif;
   font-size: 36px;
   font-weight: 700;
   line-height: 43.57px;
   color: #ffffff;
-  margin-right: 0;
-  margin-inline: 279px;
+  display: flex;
+  animation-name: shining;
+  animation-duration: 2s;
+  animation-timing-function: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
 }
+@keyframes shining{
+  0%{text-shadow: 0 0 5px #FFFFFF, 0 0 25px #FFFFFF,0 0 75px #FFFFFF,0 0 100px #FFFFFF  ;}
+  100%{text-shadow:0 0 100px #FFFFFF,0 0 75px #FFFFFF,0 0 25px #FFFFFF,0 0 5px #FFFFFF;}
+}
+
 .headerspan {
   font-family: "Inter", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 43.57px;
   color: #d5906e;
-  margin-left: 0;
 }
 .headerslastdiv {
   display: flex;
   column-gap: 16px;
+  align-items: center;
 }
 h6 {
   font-family: "Inter", sans-serif;
@@ -95,7 +114,7 @@ h6 {
   margin: auto;
   row-gap: 48px;
 }
-.section1p {
+.section1h2 {
   font-family: "Inter", sans-serif;
   font-size: 40px;
   font-weight: 700;
@@ -107,21 +126,24 @@ h6 {
   padding: 12px 45px;
   border-radius: 10px;
   border: 2px solid #b53b1b;
-}
-.shopnowspan {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   color: #b53b1b;
+  transition: 0.5s;
+}
+button.section1button:hover{
+  color: #402101e5;
+text-shadow:  0 0 5px #ea904f,0 0 5px #ea904f,0 0 25px #ea904f, 0 0 50px #ea904f,0 0 75px #ea904f,0 0 5px #ea904f,0 0 100px #ea904f,0 0 150px #ea904f ;
+transform: scale(1.5);
 }
 /* section2 */
 .section2 {
-  height: 642px;
   background-color: #ea904f;
   padding: 120px;
 }
-h5 {
+.section2title {
   text-align: center;
   font-size: 40px;
   font-weight: 700;
@@ -139,11 +161,10 @@ h5 {
   background-color: #ffffff;
   padding: 16px;
   border-radius: 8px;
-  width: 282px;
+  flex: 1 0 282px;
 }
 .sec2imgsdiv {
   border-radius: 8px 8px 0 0;
-  width: 250px;
 }
 .sec2imgsdiv img {
   width: 100%;
@@ -170,13 +191,8 @@ h4 {
 .cardsbutton {
   width: 64px;
   height: 32px;
-  top: 50px;
-  left: 186px;
-  padding: 6px 19px 6px 19px;
-  gap: 0px;
   border-radius: 8px;
-  opacity: 0px;
-
+  border: none;
   background-color: #b53b1b;
   font-family: "Inter", sans-serif;
   font-size: 12px;
@@ -184,12 +200,26 @@ h4 {
   line-height: 20px;
   color: #ffffff;
 }
+button.cardsbutton:hover{
+  background-color:green;
+  transform: scale(1.3);
+}
+i.forhover:hover{
+  transform: scale(1.5);
+}
 /* footer  */
 footer {
   display: flex;
   padding: 80px 120px;
   align-items: start;
   background-color: #402101;
+  justify-content: space-between;
+}
+.footerteldiv,
+.footermaildiv,
+.footermapdiv {
+  display: flex;
+  column-gap: 16px;
 }
 .footernav1 {
   display: flex;
@@ -267,10 +297,13 @@ h3 {
 .page2prices {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
 .page2figures img {
   width: 100%;
   border-radius: 8px 8px;
+  height: 224px;
+  object-fit: cover;
 }
 .page2figures {
   display: grid;
@@ -285,6 +318,9 @@ h3 {
   padding: 16px;
   background-color: #ffffff;
   border-radius: 8px;
+}
+div.figdiv:hover{
+  transform: scale(1.1);
 }
 figcaption {
   font-size: 16px;
@@ -305,9 +341,14 @@ figcaption {
   font-size: 40px;
   color: #b53b1b;
 }
+i.shoppingcart:hover{
+  color: green;
+}
 .allpagesdiv {
-  display: inline-flex;
-  margin: 72px 376px 120px;
+  display: flex;
+  justify-content: center;
+  margin-top: 72px;
+  align-items: center;
 }
 .icon2 {
   padding: 20px;
@@ -329,14 +370,19 @@ figcaption {
 }
 /* page3section */
 .page3section {
-  padding:160px 718px 160px 222px;;
+  padding-left: 160px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   height: 720px;
   background-image: url(../images/page3cover.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.formdiv {
+form {
+  width: 500px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   row-gap: 40px;
@@ -350,33 +396,45 @@ figcaption {
   font-weight: 400;
   line-height: 48px;
   color: #ffffff;
+  margin-bottom: 40px;
 }
-.inputdiv{
+.inputdiv {
   display: flex;
+  flex-direction: column;
   column-gap: 60px;
+  margin-bottom: 36px;
 }
-::placeholder{
+.twoinput {
+  display: flex;
+  justify-content: space-between;
+  column-gap: calc(60 / 1140 * 100%);
+  margin-top: calc(40 / 1440 * 100%);
+  margin-bottom: 36px;
+}
+::placeholder {
   font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 17px;
   color: #ffffffc2;
 }
-input{
-  background-color:  transparent;
-  border: 2px solid #FFFFFF;
+input {
+  background-color: transparent;
+  border: 2px solid #ffffff;
   border-radius: 10px;
+  width: 100%;
+  height: 40px;
+  padding-left: 8px;
 }
 textarea {
   resize: none;
-  width: 440px;
+  width: 100%;
+  padding: 8px 0 0 8px;
   border: 2px solid #ffffff;
   border-radius: 10px;
   background-color: transparent;
 }
 .page3submitbutton {
-  display: block;
-  padding: 19px 43px;
   border-radius: 10px;
   background-color: #ff543e;
   color: #ffffff;
@@ -384,13 +442,59 @@ textarea {
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
-  margin: 36px 293px 24px 30px;
-  text-align: auto;
+  width: 147px;
+  height: 56px;
+  border: none;
+  margin-top: 36px;
 }
-.page2sec2{
+button.page3submitbutton:hover{
+  background-color:green;
+  color: #FFFFFF;
+  border: 10px solid green;
+}
+.page2sec2 {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #EA904F;
+  background-color: #ea904f;
+  padding: 120px 324px;
+}
+.contacttext2{
+  font-family: "Inter", sans-serif;
+font-size: 40px;
+font-weight: 700;
+line-height: 48px;
+color: #FFFFFF;
+align-items: center;
+justify-content: center;
+margin-bottom: 40px;
+}
+.page3infodiv{
+  display: flex;
+  align-items: center;
+  column-gap: 13px;
+  text-wrap: nowrap;
+}
+.mapandcontactdiv{
+  display: flex;
+  column-gap: 108px;
+}
+.lasticons{
+  font-size: 48px;
+  border-radius: 8px;
+  border: 2px solid #FFFFFF;
+  background-color: #B53B1B;
+  padding: 16px;
+}
+.lastpagecontact {
+  display: flex;
+  flex-direction: column;
+  row-gap: 72px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.78px;
+  color: #FFFFFF;
+  
 }
