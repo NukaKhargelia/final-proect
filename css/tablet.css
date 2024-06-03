@@ -20,7 +20,20 @@
     flex-direction: row;
   }
   .lastpagecontact{
-    flex-direction: column;
+    flex-direction: row;
+    column-gap: 72px;
+    margin-block: 88px 40px;
+  }
+  .page3sec2{
+    padding-inline: 24px;
+  }
+  .mapandcontactdiv{
+    column-gap: 42px;
+    margin-top: 42px;
+  }
+  .mapdiv{
+    width: calc(696 / 745 * 100%);
+    height: 320px;
   }
 }
 @media (max-width: 681px) {

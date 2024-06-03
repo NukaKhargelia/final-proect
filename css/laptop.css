@@ -73,6 +73,9 @@ align-items: center;
   row-gap: 40px
   ;
 }
+.page3sec2{
+  padding-inline: 116px;
+}
 .lastpagecontact{
   flex-direction: row;
   /* column-gap: 72px; */
